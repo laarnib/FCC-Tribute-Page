@@ -1,5 +1,5 @@
 # Build a Tribute Page
-<hr>
+
 One of [Freecodecamp's Responsive Web Design Projects] (https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/)  to apply the things I have learned in the HTML and CSS curriculum.
 
 ## Requirements
