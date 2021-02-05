@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Inconsolata', monospace;
+}
+
+#title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+}
+
+#tribute-card {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#img-div {
+    display: flex;
+    flex-direction: column;
+}
+
+#tribute-info {
+    background-color: black;
+    margin: auto;
+    line-height: 1.5em;
+    border-top: 2px solid gray;
+    padding: 30px;
+}
+
+#tribute-link {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+}
+
+figcaption {
+    text-align: justify;
+    font-size: smaller;
+    padding: 2% 15%;
+    color: rgba(255,255,255,0.65);
+}
+
+img {
+    margin: auto;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.25em;
+}
+
+#tribute-link:hover {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+img:hover {
+    opacity: 0.75;
+}
+
+.attribution {
+    color: rgba(255,255,255,0.85);
+    text-decoration: underline;
+}
+
