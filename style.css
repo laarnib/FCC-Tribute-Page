@@ -210,3 +210,9 @@ body {
         letter-spacing: 0px;;
     }
 }
+
+@media (max-width: 825px) and (orientation: landscape) {
+    #img-caption {
+        color: whitesmoke;
+    }
+}
