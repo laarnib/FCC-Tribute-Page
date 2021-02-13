@@ -73,15 +73,15 @@ body {
 #tribute-info > #tribute-link {
     margin-top: 1.5em;
     display: block;
-    font-size: 1em;
-    color: rgb(47, 181, 248);
+    font-size: 1.05em;
+    color: rgb(11, 35, 167);
     font-weight: bold;
     letter-spacing: 1.25px;
     text-decoration: none;
 }
 
 #tribute-info > #tribute-link:hover {
-    color: rgb(37, 138, 189);
+    color: rgb(11, 35, 167,0.80);
     text-decoration: underline;
     transition: color 0.5s ease-in 0.4s;
 }
