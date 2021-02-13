@@ -1,55 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
-/***** CSS Reset ends here *****/
-
-*, *::before, *::after{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -59,7 +10,7 @@ body {
     background: -webkit-linear-gradient(-90deg, rgba(0,0,0,0.90) 30%, #FAFAFA 30%);
     background-position: top;
     color: rgb(26, 25, 25);
-    font-family: 'Montserrat', sans-serif;
+    font-family: Garamond, Georgia, 'Times New Roman', Times, serif;
     min-height: 100vh;
     display: flex;
 }
@@ -72,17 +23,60 @@ body {
 #title {
     font-family: 'Dancing Script', cursive;
     color: whitesmoke;
-    transition: color 0.7s ease-in 0.4s;
     text-align: center;
     font-size: 3.5em;
     font-weight: 900;
     letter-spacing: 5px;
 }
 
+#title:hover {
+    cursor: pointer;
+    color: rgb(245, 245, 245,0.8);
+}
+
 #tribute-card {
     padding-top: 50px;
     display: flex;
-    width: 100%;
+    max-width: 100%;
+}
+
+#tribute-info {
+    background-color: #FFF; 
+    margin-right: 3em;
+    padding: 2em;
+    padding-left: 50px;
+    border-radius: 5px;
+    flex-basis: 70%;
+}
+
+#tribute-info > .poem {
+    margin-top: 2em;
+}
+
+.poem > p {
+    margin-top: 1em;
+    text-align: left;
+    line-height: 1.25em;
+    font-size: 1.15em;
+    letter-spacing: 1px;
+}
+
+#tribute-info > h3 {
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+#tribute-info > #tribute-link {
+    margin-top: 1.5em;
+    display: block;
+    font-size: 1em;
+    color: rgb(47, 181, 248);
+    font-weight: bold;
+}
+
+#tribute-info > #tribute-link:hover {
+    color: rgb(37, 138, 189);
+    transition: color 0.5s ease-in 0.4s;
 }
 
 #img-div {
@@ -100,58 +94,34 @@ body {
 #img-caption {
     display: block; 
     padding: 1.10em;
-    font-size: 0.60em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.80em;
     color: rgb(26, 25, 25);
     text-align: center;
-}
-
-#tribute-info {
-    background-color: #FFF; 
-    margin-right: 3em;
-    padding: 2em;
-    padding-left: 50px;
-    border-radius: 5px;
-    font-size: 1em;
-    flex-basis: 70%;
-}
-
-#tribute-info > p {
-    margin-top: 1em;
-    text-align: left;
-    line-height: 1.25em;
-}
-
-#tribute-info > .beginning {
-    margin-top: 2em;
-}
-
-#tribute-info > h3 {
-    font-size: 1.75em;
-    font-weight: bold;
-}
-
-#tribute-link {
-    margin-top: 10px;
-    display: block;
-    font-size: 1em;
-    color: #2fb5f8;
-    font-weight: bold;
-}
-
-#title:hover {
-    cursor: pointer;
-    color: rgb(245, 245, 245,0.8);
+    letter-spacing: 0.80px;
 }
 
 @media (max-width: 1000px) {
-    #tribute-card {
-        flex-direction: column;
-        align-items: center;
+    body {
+        background: -webkit-linear-gradient(-90deg, rgba(0,0,0,0.90) 25%, #FAFAFA 10%);
+    }
+
+    #title {
+        font-size: 2.75em;
     }
 
     #img-div {
         order: -1;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #image {
+        max-width: 100%;
+    }
+
+    #tribute-card {
         flex-direction: column;
         align-items: center;
     }
@@ -163,21 +133,19 @@ body {
 
     #tribute-link {
         text-align: center;
+        font-size: 0.80em;
     }
 
     #tribute-info > h3 {
         text-align: center;
-        font-size: 1.5em;
-    }
-    #tribute-info > h5 {
-        text-align: center;
-    }
-    #tribute-info > p {
-        text-align: center;
-        font-size: 0.95em;
+        font-size: 1.50em;
     }
 
-    #image {
-        max-width: 100%;
+    .poem {
+        margin: auto;
+    }
+
+    .poem > p {
+        font-size: 1em;
     }
 }
