@@ -18,16 +18,20 @@ body {
     padding: 30px;
 }
 
-#title {
+#title, #title-link {
     font-family: 'Dancing Script', cursive;
     color: whitesmoke;
     text-align: center;
-    font-size: 3.5em;
+    font-size: 2em;
     font-weight: 900;
     letter-spacing: 5px;
 }
 
-#title:hover {
+#title > #title-link {
+    text-decoration: none;
+}
+
+#title > #title-link:hover {
     cursor: pointer;
     color: rgb(245, 245, 245,0.8);
 }
@@ -70,10 +74,13 @@ body {
     font-size: 1em;
     color: rgb(47, 181, 248);
     font-weight: bold;
+    letter-spacing: 1.25px;
+    text-decoration: none;
 }
 
 #tribute-info > #tribute-link:hover {
     color: rgb(37, 138, 189);
+    text-decoration: underline;
     transition: color 0.5s ease-in 0.4s;
 }
 
@@ -105,7 +112,7 @@ body {
     }
 
     #title {
-        font-size: 2.75em;
+        font-size: 1.25em;
     }
 
     #img-div {
