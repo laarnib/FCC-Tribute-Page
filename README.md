@@ -3,7 +3,7 @@
 One of [Freecodecamp's Responsive Web Design Projects](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/)  to apply the things I have learned in the HTML and CSS curriculum.
 
 ## My Solution
-A [tribute page] (https://fcc-tribute-page-dun.vercel.app/) that I made for my friend who passed away from Lymphoma in 2005. 
+A [tribute page] (https://fcc-tribute-page-dun.vercel.app/) that I made for a friend who passed away from Lymphoma in 2005. 
 
 ## Requirements
 Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/zNqgVx.
